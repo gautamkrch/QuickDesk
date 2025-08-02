@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Ticket - QuickDesk</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="dashboard-header">
+        <div class="logo">QuickDesk</div>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="my-tickets.html">My Tickets</a>
+            <a href="profile.html">Profile</a>
+            <a href="login.html" class="logout-btn">Logout</a>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <div class="content-wrapper">
+            <div class="header">
+                <h2>Create a New Ticket</h2>
+                <p>Please fill out the details below.</p>
+            </div>
+
+            <div class="form-card">
+                <form id="create-ticket-form">
+                    <div class="input-group">
+                        <label for="subject">Subject</label>
+                        <input id="subject" name="subject" type="text" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="category">Category</label>
+                        <select id="category" name="category">
+                            <option>Technical</option>
+                            <option>Billing</option>
+                            <option>General Inquiry</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="description">Description</label>
+                        <textarea id="description" name="description" rows="6" required></textarea>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="attachment">Attachment (Optional)</label>
+                        <input id="attachment" name="attachment" type="file">
+                    </div>
+                    
+                    <div>
+                        <button type="submit" class="btn btn-primary">Submit Ticket</button>
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="dashboard.html" class="cancel-link">Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>
