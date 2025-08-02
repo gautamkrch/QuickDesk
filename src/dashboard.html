@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - QuickDesk</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="dashboard-header">
+        <div class="logo">QuickDesk</div>
+        <nav>
+            <a href="dashboard.html" class="active">Dashboard</a>
+            <a href="my-tickets.html">My Tickets</a>
+            <a href="profile.html">Profile</a>
+            <a href="login.html" class="logout-btn">Logout</a>
+        </nav>
+    </header>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <a href="create-ticket.html" class="btn btn-primary new-ticket-btn">Create New Ticket</a>
+            
+            <div class="filter-section">
+                <h3>Filters</h3>
+                <input type="text" id="search-input" placeholder="Search tickets...">
+                
+                <label for="category-filter">Category</label>
+                <select id="category-filter">
+                    <option>All</option>
+                    <option>Technical</option>
+                    <option>Billing</option>
+                    <option>General Inquiry</option>
+                </select>
+
+                <label for="status-filter">Status</label>
+                <select id="status-filter">
+                    <option>All</option>
+                    <option>Open</option>
+                    <option>In Progress</option>
+                    <option>Resolved</option>
+                </select>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="my-tickets-filter">
+                    <label for="my-tickets-filter">Show my tickets only</label>
+                </div>
+                 <div class="checkbox-group">
+                    <input type="checkbox" id="open-only-filter" checked>
+                    <label for="open-only-filter">Show open only</label>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h3>Sort By</h3>
+                <div class="radio-group">
+                    <input type="radio" id="most-replied" name="sort">
+                    <label for="most-replied">Most Replied</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="recently-modified" name="sort" checked>
+                    <label for="recently-modified">Recently Modified</label>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <h2 id="welcome-message"></h2>
+            <div class="ticket-list" id="ticket-list">
+               
+            </div>
+        </main>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

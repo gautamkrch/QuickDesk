@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - QuickDesk</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="dashboard-header">
+        <div class="logo">QuickDesk</div>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="my-tickets.html">My Tickets</a>
+            <a href="profile.html" class="active">Profile</a>
+            <a href="login.html" class="logout-btn">Logout</a>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <div class="profile-card">
+            <h2>User Profile</h2>
+            <div class="profile-details">
+                <p><strong>Name:</strong> <span id="profile-name"></span></p>
+                <p><strong>Email:</strong> <span id="profile-email"></span></p>
+                <p><strong>Role:</strong> <span id="profile-role"></span></p>
+            </div>
+             <div class="input-group">
+                <label for="language">Change Language</label>
+                <select id="language" name="language">
+                    <option>English</option>
+                    <option>Spanish</option>
+                    <option>French</option>
+                </select>
+            </div>
+            <button class="btn btn-primary">Update Profile</button>
+        </div>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>
