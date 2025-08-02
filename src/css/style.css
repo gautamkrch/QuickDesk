@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Segoe UI", Arial, sans-serif;
     background-color: #f3f4f6;
@@ -141,4 +147,50 @@ form > div {
 
 form > div:last-child {
     margin-bottom: 0;
+}
+
+
+.container-main{
+   min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    flex-direction: column;
+}
+
+#logo{
+    font-size: 150px;
+}
+
+
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.login-btn{
+    margin-right: 20px;
+}
+
+.signup-btn{
+
+}
+
+#button{
+    padding: 5px 10px;
+    cursor: pointer;
+
+}
+a{
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+
+.tagline{
+    font-size: 20px;
 }
