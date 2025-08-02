@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - QuickDesk</title>
+    <title>Register - QuickDesk</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,12 +12,17 @@
         <div class="content-wrapper">
             
             <div class="header">
-                <h2>Sign in to QuickDesk</h2>
-                <p>The simple help desk solution</p>
+                <h2>Create your account</h2>
+                <p>Join QuickDesk today</p>
             </div>
 
             <div class="form-card">
                 <form action="#" method="POST">
+                    <div class="input-group">
+                        <label for="fullname">Full Name</label>
+                        <input id="fullname" name="fullname" type="text" autocomplete="name" required>
+                    </div>
+
                     <div class="input-group">
                         <label for="email">Email address</label>
                         <input id="email" name="email" type="email" autocomplete="email" required>
@@ -25,20 +30,25 @@
 
                     <div class="input-group">
                         <label for="password">Password</label>
-                        <input id="password" name="password" type="password" autocomplete="current-password" required>
+                        <input id="password" name="password" type="password" autocomplete="new-password" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input id="confirm-password" name="confirm-password" type="password" autocomplete="new-password" required>
                     </div>
                     
                     <div>
-                        <button type="submit" class="btn btn-primary">Login</button>
+                        <button type="submit" class="btn btn-primary">Register</button>
                     </div>
                 </form>
 
                 <div class="separator">
-                    <span>New to QuickDesk?</span>
+                    <span>Already have an account?</span>
                 </div>
 
                 <div>
-                     <a href="register.html" class="btn btn-secondary">Register Now</a>
+                     <a href="login.html" class="btn btn-secondary">Login Now</a>
                 </div>
             </div>
         </div>
